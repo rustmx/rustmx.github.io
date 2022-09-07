@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="our-projects-section">
+    <div class="our-projects-title-container">
+      <span class="our-projects-title">
+        {{ page.title }}
+      </span>
+    </div>
+    <div class="about-container">
+      <div class="about-left-side">
+        <img src="/img/los-panas.jpeg" class="about-image">
+      </div>
+      <div class="about-right-side">
+        <p class="about-description">
+          {{ page.content | safe }}
+        </p>
+      </div>
+    </div>
+  </section>
+{% endblock %}
