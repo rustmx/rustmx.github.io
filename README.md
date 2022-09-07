@@ -2,7 +2,7 @@
 
 ## Desarrollo
 
-Se necesica [Zola](getzola.org). Teniendo eso iniciar el sitio en modo
+Se necesita [Zola](https://getzola.org). Teniendo eso iniciar el sitio en modo
 desarrollo es sencillo:
 
     zola serve
