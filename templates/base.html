@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content= "width=device-width, initial-scale=1">
-  <title>RustMX</title>
+  <title>{% if page.title %}{{ page.title }} |{% endif %}RustMX</title>
   <link rel="stylesheet" href= "/css/styles.css">
 </head>
 <body>
@@ -21,113 +21,7 @@
       </div>
     </header>
 
-    <main class="hero-container">
-      <img src="img/ferris.png" class= "w-full object-cover object-center max-w-[500px] mx-auto">
-      <div class="hero-text-container">
-        <h1 class="hero-title">¡La comunidad de Rust en Mexico esta
-        creciendo!</h1>
-        <h2 class="hero-subtitle">Si estas interesado o interesada
-        en aprender Rust, o estas llevando a cabo un proyecto con
-        tecnología asociada, te invitamos a acercarte y
-        participar.</h2>
-        <h2 class="hero-subtitle">Te dejamos:</h2>
-      </div>
-    </main>
-
-    <section class="joinus-container">
-      <div class="joinus-left-side">
-        <div class="joinus-side-container">
-          <div class="icon-container">
-            <a href="https://www.meetup.com/es-ES/Rust-MX/" target= "_blank">
-              <img alt="Meetup Icon" src="img/fa-brands_meetup.svg" class= "join-us-meetup-icon">
-            </a>
-          </div><a href="https://www.meetup.com/es-ES/Rust-MX/"
-          target="_blank">¡Nuestro grupo de meetup!</a>
-        </div>
-      </div>
-      <div class="joinus-center-side">
-        <div class="joinus-side-container">
-          <div class="icon-container">
-            <a href="https://twitter.com/rustlang_mx" target= "_blank">
-              <img alt="Meetup Icon" src= "img/fa-brands_twitter.svg" class=
-            "join-us-twitter-icon"></a>
-          </div><a href="https://twitter.com/rustlang_mx" target=
-          "_blank">¡Nuestra cuenta de twitter!</a>
-        </div>
-      </div>
-      <div class="joinus-right-side">
-        <div class="joinus-side-container">
-          <div class="icon-container">
-            <a href="https://t.me/RustMX" target="_blank">
-              <img alt="Telegram Icon" src="img/fa-brands_telegram.svg" class="join-us-telegram-icon">
-            </a>
-          </div><a href="https://t.me/RustMX" target=
-          "_blank">¡Nuestro grupo de Telegram!</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-container">
-      <div class="about-left-side">
-        <img src="img/rust-2018.jpeg" class="about-image">
-      </div>
-      <div class="about-right-side">
-        <p class="about-description">Desde 2016 hemos organizado
-        eventos en la ciudad.<br>
-        Dando clases en universidades, charlas en eventos y
-        acercando oradores del exterior para dar a conocer el
-        lenguaje.</p><a href="/about" class=
-        "about-action">Acerca</a>
-      </div>
-    </section>
-
-    <section class="our-projects-section">
-      <div class="our-projects-title-container">
-        <span class="our-projects-title">Nuestros Proyectos</span>
-      </div>
-      <div class="repo-list">
-        {% for i in [1, 2, 3, 4, 5] %}
-        <a href="https://github.com/rustmx/book" class="repository">
-          <h2 class="repository__name">book</h2>
-          <div class="repository__description">
-            The Rust Programming Language
-          </div>
-          <div class="repository__langs">
-            <div class="project-card-lang-circle"></div>
-            No language
-          </div>
-        </a>
-        {% endfor %}
-
-        <a href="https://github.com/rustmx/book" class="repository">
-          <h2 class="repository__name">book</h2>
-          <div class="repository__description">
-            The Rust Programming Language
-          </div>
-          <div class="repository__langs">
-            <div class="project-card-lang-circle"></div>
-            No language
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <section class="our-members-section">
-      <div class="our-members-title-container">
-        <span class="our-members-title">Miembros</span>
-      </div>
-      <ul class="our-members-list">
-        <li class="contributor">
-          <a href="https://github.com/VentGrey" target= "_blank">
-            <img alt="VentGrey GitHub Profile Picture" src="https://avatars.githubusercontent.com/u/24773698?v=4" class="rounded-full" width="260" height="260">
-          </a>
-          <h1>Omar Jair Purata Funes</h1>
-          <p class="contributor">DevOops @UpVent · 🦀 Rustacean · 🧠
-          INTJ · FS activist 💻 · Keep your politics away from my
-          code. Sysadmin by heart.</p>
-        </li>
-      </ul>
-    </section>
+    {% block content %}{% endblock %}
   </div>
 </body>
 </html>

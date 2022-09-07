@@ -267,22 +267,6 @@ summary {
 Removes the default spacing and border for appropriate elements.
  */
 
-blockquote,
-dl,
-dd,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-figure,
-p,
-pre {
-    margin: 0;
-}
-
 fieldset {
     margin: 0;
     padding: 0;
@@ -1635,6 +1619,7 @@ video {
 }
 
 .repository__name {
+    margin: 0;
     font-family: Lato, sans-serif;
     font-size: 1.875rem;
     font-weight: 700;
