@@ -20,6 +20,7 @@
         </nav>
       </div>
     </header>
+
     <main class="hero-container">
       <img src="img/ferris.png" class= "w-full object-cover object-center max-w-[500px] mx-auto">
       <div class="hero-text-container">
@@ -32,6 +33,7 @@
         <h2 class="hero-subtitle">Te dejamos:</h2>
       </div>
     </main>
+
     <section class="joinus-container">
       <div class="joinus-left-side">
         <div class="joinus-side-container">
@@ -64,6 +66,7 @@
         </div>
       </div>
     </section>
+
     <section class="about-container">
       <div class="about-left-side">
         <img src="img/rust-2018.jpeg" class="about-image">
@@ -77,208 +80,38 @@
         "about-action">Acerca</a>
       </div>
     </section>
+
     <section class="our-projects-section">
       <div class="our-projects-title-container">
         <span class="our-projects-title">Nuestros Proyectos</span>
       </div>
-      <div class="our-projects-list-of-repositories">
-        <a href="https://github.com/rustmx/book" class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">book</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">The Rust Programming
-        Language</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
+      <div class="repo-list">
+        {% for i in [1, 2, 3, 4, 5] %}
+        <a href="https://github.com/rustmx/book" class="repository">
+          <h2 class="repository__name">book</h2>
+          <div class="repository__description">
+            The Rust Programming Language
           </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a><a href="https://github.com/rustmx/team" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">team</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Repositorio central del equipo de
-        RustMX para la gestión de tareas y proyectos</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
+          <div class="repository__langs">
             <div class="project-card-lang-circle"></div>
+            No language
           </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a><a href="https://github.com/rustmx/hello-json"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">hello-json</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Un ejemplo de JSON Response con
-        Rust y Iron para las reuniones de RustMX</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
+        </a>
+        {% endfor %}
+
+        <a href="https://github.com/rustmx/book" class="repository">
+          <h2 class="repository__name">book</h2>
+          <div class="repository__description">
+            The Rust Programming Language
+          </div>
+          <div class="repository__langs">
             <div class="project-card-lang-circle"></div>
+            No language
           </div>
-          <p><button class=
-          "project-card-container">Rust</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/tweet-it-again-rs" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">tweet-it-again-rs</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Tool to tweet the oldest update of
-        an account and then delete the former</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">Rust</button></p>
-        </div></a><a href="https://github.com/rustmx/rustday.mx"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">rustday.mx</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">rustday.mx site
-        sources</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">CSS</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/text-adventure" class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">text-adventure</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Text adventure project for
-        RustBridge sessions with several flavors</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">Rust</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/cryptocoin_scraper" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">cryptocoin_scraper</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Scraps cryptocurrencies names and
-        prices. Created for Rust workshops.</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">HTML</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/workshop-rocket-meetup008"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">workshop-rocket-meetup008</button></h2>
-        <p class="project-card-description"></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">Rust</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/rustmx.github.io" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">rustmx.github.io</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">RustMX site</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/club-de-estudio-rustmx" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">club-de-estudio-rustmx</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Material para el club de estudio
-        de Rust</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">HTML</button></p>
-        </div></a><a href="https://github.com/rustmx/intro-rust"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">intro-rust</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Taller de introducción a
-        Rust</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">HTML</button></p>
-        </div></a><a href="https://github.com/rustmx/Charlas"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">Charlas</button></h2>
-        <p class="project-card-description"></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a><a href=
-        "https://github.com/rustmx/issues-crawler" class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">issues-crawler</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Proyecto de las sesiones de Train
-        the Trainers 2020</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class=
-          "project-card-container">Rust</button></p>
-        </div></a><a href="https://github.com/rustmx/Chambas"
-        class="h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">Chambas</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Encuentra las chambas más
-        interesantes sobre Rust aquí</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a><a href="https://github.com/rustmx/foro" class=
-        "h-full">
-        <h2 class="project-card-header"><button class=
-        "project-card-container">foro</button></h2>
-        <p class="project-card-description"><button class=
-        "project-card-container">Foro para la comunidad de
-        RustMX</button></p>
-        <div class="project-card-footer">
-          <div class="h-5">
-            <div class="project-card-lang-circle"></div>
-          </div>
-          <p><button class="project-card-container">No
-          language</button></p>
-        </div></a>
+        </a>
       </div>
     </section>
+
     <section class="our-members-section">
       <div class="our-members-title-container">
         <span class="our-members-title">Miembros</span>
