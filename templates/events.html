@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <section class="our-projects-section">
+    <div class="our-projects-title-container">
+      <span class="our-projects-title">
+        {{ page.title }}
+      </span>
+    </div>
+    <div class="events-container-list">
+      {{ page.content | safe }}
+  </div>
+  </section>
+{% endblock %}

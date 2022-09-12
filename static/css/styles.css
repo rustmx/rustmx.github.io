@@ -785,8 +785,6 @@ video {
     -webkit-text-decoration-line: underline;
     text-decoration-line: underline;
 }
-.events-left-side{
-}
 .events-right-side {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -1636,4 +1634,35 @@ video {
     display: flex;
     align-items: center;
     gap: .5rem;
+}
+
+
+/* tables */
+table {
+    width: 100%;
+}
+table tr {
+    margin-left: 0px;
+    margin-right: 0px;
+    display: grid;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+@media (min-width: 640px) {
+
+    table tr {
+        gap: 2rem;
+    }
+}
+@media (min-width: 768px) {
+
+    table tr {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+    }
+}
+table tr td:nth-last-child() {
+    padding-left: 3rem;
+    padding-right: 3rem;
 }
