@@ -1066,7 +1066,6 @@ video {
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     display: grid;
-    align-items: center;
 }
 @media (min-width: 640px) {
 
@@ -1082,16 +1081,12 @@ video {
         padding-bottom: 1.25rem;
     }
 }
-.about-left-side{
-    aspect-ratio: auto 16/9;
-}
 .about-image {
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    border: 9px white solid;
 }
-.about-right-side {
+.about-text-side {
     font-family: Ubuntu;
 }
 .about-description {
@@ -1665,4 +1660,14 @@ table tr {
 table tr td:nth-last-child() {
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+/* links */
+.our-projects-section a {
+    color: #b51214;
+}
+
+/* details */
+details {
+    cursor: pointer;
 }

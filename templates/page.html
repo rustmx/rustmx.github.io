@@ -1,21 +1,36 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <section class="our-projects-section">
-    <div class="our-projects-title-container">
-      <span class="our-projects-title">
-        {{ page.title }}
-      </span>
+<section class="our-projects-section">
+  <div class="our-projects-title-container">
+    <span class="our-projects-title">
+      {{ page.title }}
+    </span>
+  </div>
+  {%- if page.extra.img -%}
+  <div class="about-container">
+    {%- if page.extra.imgSide -%}{% set side = page.extra.imgSide %}
+    {%- else -%}{% set side = "right" %}{%- endif -%}
+    {%- if side == "left" -%}
+    <div class="about-img-side">
+      <img src="{{ page.extra.img }}" class="about-image">
     </div>
-    <div class="about-container">
-      <div class="about-left-side">
-        <img src="/img/los-panas.jpg" class="about-image">
-      </div>
-      <div class="about-right-side">
-        <p class="about-description">
-          {{ page.content | safe }}
-        </p>
-      </div>
+    {%- endif -%}
+    <div class="about-text-side">
+      <p class="about-description">
+        {{ page.content | safe }}
+      </p>
     </div>
-  </section>
+    {%- if side == "right" -%}
+    <div class="about-img-side">
+      <img src="{{ page.extra.img }}" class="about-image">
+    </div>
+    {%- endif -%}
+  </div>
+  {%- else -%}
+  <div class="events-container-list">
+    {{ page.content | safe }}
+  </div>
+  {%- endif -%}
+</section>
 {% endblock %}
