@@ -1,6 +1,5 @@
 +++
 title = "Eventos"
-template = "events.html"
 +++
 
 |  |  |

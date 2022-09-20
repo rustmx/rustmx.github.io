@@ -1,5 +1,8 @@
 +++
 title = "Nuestra comunidad"
+[extra]
+img = "/img/los-panas.jpg"
+imgSide = "left"
 +++
 
 La comunidad de RustMX es pequeña pero creciente.
